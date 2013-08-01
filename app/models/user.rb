@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  attr_accessible :title, :body, :first_name, :last_name, :email, :password, :password_confirmation, :profile_name
+  attr_accessible :title, :body, :first_name, :last_name, :email, :password, :password_confirmation, :profile_name, :remember_me
 
   validates :first_name, presence: true
   
